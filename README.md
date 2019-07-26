@@ -87,7 +87,8 @@ Para la realización de esta tarea utilizaremos, el antes mencionado servicio de
         $ sudo pip install --upgrade pip
       ```
 * Instalar OpenCV
-    ``` pip install opencv-python 
+    ``` 
+        pip install opencv-python 
         o
         pip3 install opencv-python
     ```
@@ -108,7 +109,7 @@ Para la realización de esta tarea utilizaremos, el antes mencionado servicio de
   <img src="image_workshop/download.png" width="722" length="500">
 </p>
 
-## Utilizando Watson Visual Recognition y creando el modelo clasificador multiclase
+## Crear el modelo clasificador
 
 Ir al catalogo de IBM, y seleccionar "AI".
 
