@@ -79,7 +79,7 @@ Para la realización de esta tarea utilizaremos, el antes mencionado servicio de
       - Python
       ```
         $ brew install python3
-        python3 --version
+        $ python3 --version
       ```
       - Instalar PIP
       ```
