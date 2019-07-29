@@ -220,6 +220,6 @@ Posteriormente, copiamos el id del servicio que creamos desde la interface con n
 
 Y lo pegamos en el archivo "test_model.py" en la seccion correspondiente (linea 15).
 
-Finalmente, debemos especificar en las variables "PATH_TO_THE_TEST_IMAGE" y "TEST_IMAGE_NAME" el path y nombre de la imagen que queremos clasificar.
+Finalmente, debemos especificar en las variables "PATH_TO_THE_TEST_IMAGE" y "TEST_IMAGE_NAME" el path y nombre de la imagen que queremos clasificar. En concreto estos valores son "test_code/" y "test_code.jpg" respectivamente
 
 Una vez completados estos pasos solo nos queda correr el script con el comando "python3 test_model.py" y si la imagen que clasificamos resulto ser una con ojos cerrados esta se agregara al set de entrenamiendo para, de esta forma, ir incrementando los datos de entrenamiento a lo largo del tiempo.
