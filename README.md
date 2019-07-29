@@ -34,14 +34,13 @@ Para la realización de esta tarea utilizaremos, el antes mencionado servicio de
 - Código Python
     - createModel.py
     - testModel.py
-- Imágenes para entrenamiento
-- Imágenes para entrenamiento
+- Imágenes para entrenamiento, un zip con el dataset de rostros con ojos abiertos y otro para los cerrados.
+- Imágenes para test
 - README.md
 
 
 ## Prerrequisitos
 * Registrarse en IBM Cloud: [Aquí](https://cloud.ibm.com/registration)
-* Registrarse en Watson Studio: [Aquí](https://cloud.ibm.com/catalog/services/watson-studio)
 * Instalar Git
   - Windows 
     - [GIT for Windows](https://gitforwindows.org/)
@@ -100,8 +99,9 @@ Para la realización de esta tarea utilizaremos, el antes mencionado servicio de
 
 * Clonar el repositorio
   ```
-  $ git clone [link al repo]
+  $ git clone https://github.com/IBMInnovationLabUY/prevencion-accidentes-watson
   ```
+* Descomprimir el archivo test.zip
 
 ## Arquitectura
 
