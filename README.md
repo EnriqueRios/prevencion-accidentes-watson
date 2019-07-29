@@ -56,7 +56,7 @@ Para la realización de esta tarea utilizaremos, el antes mencionado servicio de
 
 * Instalar Python
     - Windows 
-        - [Python for Windows](https://www.python.org/downloads/ version 3.7.3)
+        - [Python for Windows](https://www.python.org/downloads/version3.7.3)
     - Linux
         ```
         $ sudo apt install python3.7
