@@ -21,10 +21,11 @@ with open('./abiertos.zip', 'rb') as abiertos, open('./cerrados.zip', 'rb') as c
     model_create_date = model['created']
     model_class = model['classes'][0]['class']
 
-print("Datos del Modelo " + model_name + "recien creado.")
-print("ID del modelo" + model_id)
-print("Fecha de creación" + model_create_date)
-print("Clases del modelo" + model_class)
+print("Datos del Modelo recien creado.")
+print("Nombre del modelo: " + model_id)
+print("ID del modelo: " + model_id)
+print("Fecha de creación: " + model_create_date)
+print("Clases del modelo: " + model_class)
 
 
 #obtener el clasificador recien creado
