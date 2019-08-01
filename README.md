@@ -53,7 +53,7 @@ Para la realización de esta tarea utilizaremos, el antes mencionado servicio de
   - MacOS
     - [GIT for MacOS](https://git-scm.com/download/mac)
 
-* Instalar Python
+* Instalar Python 3
     - Windows 
         - [Python for Windows](https://www.python.org/downloads/version3.7.3)
     - Linux
@@ -64,8 +64,7 @@ Para la realización de esta tarea utilizaremos, el antes mencionado servicio de
       - Instalar PIP
       ```
           $ sudo apt-get update
-          $ sudo apt-get install python-pip
-          $ sudo pip install --upgrade pip
+          $ sudo apt-get install python3-pip
       ```
     - MacOS
       - Instalar Brew
@@ -82,13 +81,11 @@ Para la realización de esta tarea utilizaremos, el antes mencionado servicio de
       ```
       - Instalar PIP
       ```
-        $ sudo easy_install pip
+        $ sudo easy_install pip3
         $ sudo pip install --upgrade pip
       ```
 * Instalar OpenCV
     ``` 
-        pip install opencv-python 
-        o
         pip3 install opencv-python
     ```
 * Instalar Visual Studio Code
