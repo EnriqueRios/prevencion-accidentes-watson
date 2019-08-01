@@ -25,7 +25,7 @@ print("Datos del Modelo recien creado.")
 print("Nombre del modelo: " + model_id)
 print("ID del modelo: " + model_id)
 print("Fecha de creación: " + model_create_date)
-print("Clases del modelo: " + model_class)
+print("Clases del modelo: " + model_class + "negative_class")
 
 
 #obtener el clasificador recien creado
