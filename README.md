@@ -113,7 +113,7 @@ Para la realización de esta tarea utilizaremos, el antes mencionado servicio de
       
 * Instalar Watson Visual Recognition
     ```
-      pip install --upgrade "ibm-watson>=3.0.4"
+      pip3 install --upgrade "ibm-watson>=3.0.4"
       
     ```
 
