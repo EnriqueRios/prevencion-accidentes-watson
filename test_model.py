@@ -20,7 +20,7 @@ visual_recognition = VisualRecognitionV3(
         iam_apikey='{SERVICE_API_KEY}')
 
         
-image_test_path = '{PATH_TO_THE_TEST_IMAGE}}'
+image_test_path = '{PATH_TO_THE_TEST_IMAGE}'
 image_test_name = '{TEST_IMAGE_NAME}'
 
 #Utilizo el servicio detectfaces para identificar las caras en la imagen
@@ -99,13 +99,13 @@ else:
         with open('recortes/' + '0.png', 'rb') as images_file:
             classes = visual_recognition.classify(
                 images_file,
-                threshold='0.1',
+                threshold='0.0',
                 classifier_ids=[id_class]).get_result()
             #print(json.dumps(classes, indent=2))
             
         clases = classes['images'][0]['classifiers'][0]['classes']
         score = clases[0]['score']
-        print("La persona en la imagen esta con los ojos cerrados con un :" + score + "de confianza.")
+        print("La persona en la imagen esta con los ojos cerrados con un:" + str(score) + " de confianza.")
 
 
         # if (len(clases) > 0):    
