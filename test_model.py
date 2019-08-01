@@ -108,37 +108,37 @@ else:
         print("La persona en la imagen esta con los ojos cerrados con un :" + score + "de confianza.")
 
 
-        if (len(clases) > 0):    
-            class_name = []
-            class_socre = []
-            for item in clases:
-                class_name.append(item['class'])
-                class_socre.append(item['score'])
+        # if (len(clases) > 0):    
+        #     class_name = []
+        #     class_socre = []
+        #     for item in clases:
+        #         class_name.append(item['class'])
+        #         class_socre.append(item['score'])
                     
-            max_score = 0
-            indice = -1
-            for idx,item in enumerate(class_socre):
-                if item > max_score:
-                    max_score = item
-                    indice = idx
+        #     max_score = 0
+        #     indice = -1
+        #     for idx,item in enumerate(class_socre):
+        #         if item > max_score:
+        #             max_score = item
+        #             indice = idx
                     
-            if max_score > CONFIDENCE:
-                nombre_zip = 'more_' + class_name[indice] + '.zip'
+        #     if max_score > CONFIDENCE:
+        #         nombre_zip = 'more_' + class_name[indice] + '.zip'
                     
-                #genero el zip con la nueva imagen para actualizar el modelo
-                zf = zipfile.ZipFile(nombre_zip, mode="w")
-                try:
-                    zf.write(image_test_path, compress_type=compression)
-                finally:
-                    zf.close()
+        #         #genero el zip con la nueva imagen para actualizar el modelo
+        #         zf = zipfile.ZipFile(nombre_zip, mode="w")
+        #         try:
+        #             zf.write(image_test_path, compress_type=compression)
+        #         finally:
+        #             zf.close()
                         
-                #actualizo el modelo
-                nombre = class_name[indice]
-                with open('./' + nombre_zip, 'rb') as nombre:
-                    updated_model = visual_recognition.update_classifier(
-                        classifier_id=id_class,
-                        positive_examples={'more_positive_examples': nombre}).get_result()
-                    #print(json.dumps(updated_model, indent=2))
-                remove(nombre_zip) 
+        #         #actualizo el modelo
+        #         nombre = class_name[indice]
+        #         with open('./' + nombre_zip, 'rb') as nombre:
+        #             updated_model = visual_recognition.update_classifier(
+        #                 classifier_id=id_class,
+        #                 positive_examples={'more_positive_examples': nombre}).get_result()
+        #             #print(json.dumps(updated_model, indent=2))
+        #         remove(nombre_zip) 
                 
 
