@@ -53,7 +53,7 @@ Para la realización de esta tarea utilizaremos, el antes mencionado servicio de
   - MacOS
     - [GIT for MacOS](https://git-scm.com/download/mac)
 
-* Instalar Python
+* Instalar Python 3
     - Windows 
         - [Python for Windows](https://www.python.org/downloads/version3.7.3)
     - Linux
@@ -64,8 +64,7 @@ Para la realización de esta tarea utilizaremos, el antes mencionado servicio de
       - Instalar PIP
       ```
           $ sudo apt-get update
-          $ sudo apt-get install python-pip
-          $ sudo pip install --upgrade pip
+          $ sudo apt-get install python3-pip
       ```
     - MacOS
       - Instalar Brew
@@ -82,15 +81,36 @@ Para la realización de esta tarea utilizaremos, el antes mencionado servicio de
       ```
       - Instalar PIP
       ```
-        $ sudo easy_install pip
+        $ sudo easy_install pip3
         $ sudo pip install --upgrade pip
       ```
 * Instalar OpenCV
     ``` 
-        pip install opencv-python 
-        o
         pip3 install opencv-python
     ```
+* Instalar Visual Studio Code
+  - Windows
+      - [Visual Studio Code](https://code.visualstudio.com/Download)
+  - Linux
+      1. [Visual Studio Code](https://code.visualstudio.com/Download)
+      2. Descomprimir el contenido del archivo comprimido y almacenarlo en una carpeta determinada:
+    ```
+      sudo unzip VSCode-linux-x64.zip -d /opt/vscode
+    ```
+       Lo que hace este comando es descomprimir el contenido del archivo VSCode-linux-x64.zip en la carpeta /opt/vscode.              Con el parámetro -d le indicamos que cree la carpeta en caso de que no exista.
+      3. Ahora toca crear el acceso directo para no tener que ejecutar siempre la expresión ./Code. Tal y como he mencionado antes, vamos a seguir este tutorial y, en el archivo con extensión .desktop añadimos el siguiente contenido:
+     ```   
+        [Desktop Entry]
+        Name=Visual Studio Code
+        Comment=Editor de código Visual Studio Linux
+        Exec=/opt/vscode/Code
+        Icon=/opt/vscode/resources/app/vso.png
+        Terminal=false
+        Type=Application
+     ```
+  - MacOS
+    - [Visual Studio Code](https://code.visualstudio.com/Download)
+      
 * Instalar Watson Visual Recognition
     ```
       pip install --upgrade "ibm-watson>=3.0.4"
