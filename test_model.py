@@ -90,8 +90,13 @@ if (len(face_location) > 1):
                 remove(nombre_zip)
 else: 
     if (len(face_location) > 0):
-        cv2.imwrite(os.path.join(path , '1.png'), img)  
-        with open('recortes/' + '1.png', 'rb') as images_file:
+        x = face_location[0]['left']
+        y = face_location[0]['top']
+        w = face_location[0]['width']
+        h = face_location[0]['height']
+        crop_img = img[y:y + h, x:x + w]
+        cv2.imwrite(os.path.join(path , '0.png'), crop_img) 
+        with open('recortes/' + '0.png', 'rb') as images_file:
             classes = visual_recognition.classify(
                 images_file,
                 threshold='0.1',
@@ -99,6 +104,10 @@ else:
             #print(json.dumps(classes, indent=2))
             
         clases = classes['images'][0]['classifiers'][0]['classes']
+        score = clases[0]['score']
+        print("La persona en la imagen esta con los ojos cerrados con un :" + score + "de confianza.")
+
+
         if (len(clases) > 0):    
             class_name = []
             class_socre = []
