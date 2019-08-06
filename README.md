@@ -92,22 +92,7 @@ Para la realización de esta tarea utilizaremos, el antes mencionado servicio de
   - Windows
       - [Visual Studio Code](https://code.visualstudio.com/Download)
   - Linux
-      1. [Visual Studio Code](https://code.visualstudio.com/Download)
-      2. Descomprimir el contenido del archivo comprimido y almacenarlo en una carpeta determinada:
-    ```
-      sudo unzip VSCode-linux-x64.zip -d /opt/vscode
-    ```
-       Lo que hace este comando es descomprimir el contenido del archivo VSCode-linux-x64.zip en la carpeta /opt/vscode.              Con el parámetro -d le indicamos que cree la carpeta en caso de que no exista.
-      3. Ahora toca crear el acceso directo para no tener que ejecutar siempre la expresión ./Code. Tal y como he mencionado antes, vamos a seguir este tutorial y, en el archivo con extensión .desktop añadimos el siguiente contenido:
-     ```   
-        [Desktop Entry]
-        Name=Visual Studio Code
-        Comment=Editor de código Visual Studio Linux
-        Exec=/opt/vscode/Code
-        Icon=/opt/vscode/resources/app/vso.png
-        Terminal=false
-        Type=Application
-     ```
+      - [Visual Studio Code](https://code.visualstudio.com/Download)
   - MacOS
     - [Visual Studio Code](https://code.visualstudio.com/Download)
       
