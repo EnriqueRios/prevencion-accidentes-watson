@@ -40,7 +40,7 @@ Para la realización de esta tarea utilizaremos, el antes mencionado servicio de
 
 
 ## Prerrequisitos
-* Registrarse en IBM Cloud: [Aquí](https://cloud.ibm.com/registration)
+* Registrarse en IBM Cloud: [Aquí](https://ibm.biz/Bd26aa)
 * Instalar Git
   - Windows 
     - [GIT for Windows](https://gitforwindows.org/)
